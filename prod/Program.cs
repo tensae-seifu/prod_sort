@@ -9,6 +9,8 @@ namespace prod
 {
     internal class Program
     {
+
+        
         static void Main(string[] args)
         {
             List<Product> product = new List<Product>();
@@ -57,7 +59,7 @@ namespace prod
             Console.WriteLine("\nAfer sorting using the Comparision deligate ");
             Console.WriteLine("=====================================================\n");
 
-
+            //create an intance of the deligate and pass in the function name
             Comparison<Product> ProductComp = new Comparison<Product>(CompareProducts);
 
 
